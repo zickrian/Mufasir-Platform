@@ -166,22 +166,15 @@ export default function QuranPage() {
                       <p className="font-semibold text-[15px] tracking-tight truncate text-gray-900 group-hover:text-emerald-700 transition-colors">
                         {surah.transliteration}
                       </p>
-                      <span
-                        className={`text-[9px] px-2 py-0.5 font-bold rounded-full uppercase tracking-widest shrink-0 ${surah.type === "meccan" ? "bg-cyan-50 text-cyan-600" : "bg-teal-50 text-teal-600"}`}
-                      >
-                        {surah.type === "meccan" ? "Makkiyah" : "Madaniyah"}
-                      </span>
                     </div>
-                    <p className="text-xs text-gray-500 group-hover:text-emerald-600/70 transition-colors">
-                      {surah.translation}{" "}
-                      <span className="mx-1 opacity-50">•</span>{" "}
-                      {surah.total_verses} ayat
-                    </p>
-                    <p className="text-[11px] text-emerald-700/70 mt-1 truncate">
-                      {surah.revelationPlace}{" "}
-                      <span className="mx-1 opacity-40">•</span>{" "}
-                      {Object.keys(surah.audioFull).length} pilihan audio
-                    </p>
+                     <p className="text-xs text-gray-500 group-hover:text-emerald-600/70 transition-colors">
+                       {surah.translation}{" "}
+                       <span className="mx-1 opacity-50">•</span>{" "}
+                       {surah.total_verses} ayat
+                     </p>
+                     <p className="text-[11px] text-emerald-700/70 mt-1 truncate">
+                       {Object.keys(surah.audioFull).length} pilihan audio
+                     </p>
                   </div>
 
                   <p className="arabic-text text-xl text-emerald-900 shrink-0 font-normal opacity-90 group-hover:text-emerald-600 transition-colors max-w-[92px] truncate">
